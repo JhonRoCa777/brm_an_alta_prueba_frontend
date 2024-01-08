@@ -1,13 +1,19 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
-import { Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { AppRouter } from './router';
 
 function App() {
 
   return (
-    <>
-      <Button variant='primary'> CLICK </Button>
-    </>
+    <BrowserRouter>
+
+      <Container fluid style={{marginTop: '10px'}}>
+        <AppRouter/>
+      </Container>
+      
+    </BrowserRouter>
   )
 }
 
