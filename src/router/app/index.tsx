@@ -10,7 +10,10 @@ export function AppRouter() {
       </Route>
       <Route path='/Dashboard'
         element={<CSuspense path={import('@/pages/Private/Dashboard')}/>}>
-      </Route>     
+      </Route>
+      <Route path='/Factura/:id'
+        element={<CSuspense path={import('@/pages/Private/Factura')}/>}>
+      </Route>    
       <Route path='*' element={<h1> 404 NOT FOUND </h1>}></Route>
     </Routes>
   );
